@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Força no Prato | 30 receitas proteicas para mulheres</title>
+<meta name="description" content="30 receitas proteicas rápidas e gostosas para mulheres com rotina real, com cardápio de 7 dias, lista de compras e mais 3 bônus.">
+<meta property="og:title" content="Força no Prato: 30 receitas proteicas para mulheres">
+<meta property="og:description" content="Receitas rápidas, gostosas e sem cara de dieta. Com 5 bônus.">
+<meta property="og:image" content="img/p01.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#2E3B33;--ros:#C2546B;--rosd:#9E3A52;--blu:#F6E6E3;--blu2:#EFD6D1;--pap:#FFFBF8;--sald:#6E8466;--mut:#7c827a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--pap);color:var(--ink);font-family:'Hanken Grotesk',system-ui,sans-serif;font-size:17px;line-height:1.6}
+img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.kick{font-size:12px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--ros)}
+h1,h2,h3{font-family:'Bodoni Moda',serif;font-weight:500;line-height:1.08}
+h2{font-size:clamp(30px,4.4vw,44px);margin-top:10px}
+h2 em,h1 em{font-style:italic;font-weight:400;color:var(--ros)}
+section{padding:80px 0}
+.btn{display:inline-block;background:var(--ros);color:#fff;text-decoration:none;font-weight:800;font-size:16px;letter-spacing:.04em;padding:18px 34px;border-radius:999px;transition:background .2s,transform .2s;box-shadow:0 10px 24px -12px rgba(158,58,82,.7)}
+.btn:hover{background:var(--rosd);transform:translateY(-1px)}
+.note{font-size:13px;color:var(--mut);margin-top:12px}
+
+/* HERO */
+.hero{padding:56px 0 70px;background:linear-gradient(180deg,var(--blu) 0%,var(--pap) 100%)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(46px,7vw,78px);margin-top:14px}
+.hero h1 em{display:block;font-size:.62em;margin-top:4px}
+.hero p.lead{font-size:20px;margin-top:20px;max-width:30em}
+.hero ul{list-style:none;margin:24px 0 30px}
+.hero li{padding:6px 0 6px 30px;position:relative;font-weight:500}
+.hero li:before{content:"";position:absolute;left:0;top:13px;width:16px;height:16px;border-radius:50%;background:var(--ros);box-shadow:inset 0 0 0 4px var(--blu)}
+.mock{position:relative}
+.mock img{border-radius:6px;box-shadow:0 30px 60px -25px rgba(46,59,51,.45),0 0 0 1px rgba(0,0,0,.04);transform:rotate(2deg);max-width:420px;margin-left:auto}
+.mock .selo{position:absolute;left:0;bottom:30px;width:120px;height:120px;border-radius:50%;background:var(--ros);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 0 0 6px var(--pap)}
+.mock .selo b{font-family:'Bodoni Moda',serif;font-weight:500;font-size:38px;line-height:1}
+.mock .selo small{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+
+/* DOR */
+.dor .wrap{max-width:760px;text-align:center}
+.dor p{margin-top:18px;font-size:18px}
+.dor .big{font-family:'Bodoni Moda',serif;font-style:italic;font-size:24px;color:var(--ros);margin-top:26px}
+
+/* GALERIA */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:40px}
+.gal figure{position:relative;border-radius:8px;overflow:hidden;aspect-ratio:4/3.3}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gal figure:hover img{transform:scale(1.04)}
+.gal figcaption{position:absolute;left:10px;bottom:10px;background:rgba(255,251,248,.94);border-radius:999px;padding:4px 12px;font-size:12.5px;font-weight:700}
+.gal figcaption b{color:var(--ros)}
+
+/* PARTES */
+.partes{background:var(--blu)}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.parte{background:var(--pap);border-radius:10px;padding:26px 22px}
+.parte .n{font-family:'Bodoni Moda',serif;font-style:italic;font-size:42px;color:var(--ros);line-height:1}
+.parte h3{font-size:22px;margin-top:10px}
+.parte p{font-size:15px;margin-top:8px;color:var(--ink)}
+.parte small{display:block;margin-top:12px;font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--sald)}
+
+/* POR DENTRO */
+.dentro .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.pages{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pages img{border-radius:4px;box-shadow:0 18px 40px -20px rgba(46,59,51,.5),0 0 0 1px rgba(0,0,0,.05)}
+.pages img:nth-child(2){margin-top:40px}
+.feat{list-style:none;margin-top:24px}
+.feat li{padding:12px 0;border-bottom:1px solid var(--blu2);display:flex;gap:14px}
+.feat li b{font-family:'Bodoni Moda',serif;font-style:italic;font-weight:500;color:var(--ros);font-size:22px;line-height:1.2;min-width:26px}
+
+/* BONUS */
+.bonus{background:var(--ink);color:var(--pap)}
+.bonus .kick{color:#E9A3B2}
+.bonus h2 em{color:#E9A3B2}
+.blist{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:40px}
+.b{border:1px solid rgba(255,251,248,.18);border-radius:10px;padding:22px 18px}
+.b .n{font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:#E9A3B2}
+.b h3{font-size:20px;margin-top:10px}
+.b p{font-size:14px;margin-top:8px;opacity:.85}
+.bpages{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px;max-width:760px}
+.bpages img{border-radius:4px}
+
+/* PARA QUEM */
+.quem .wrap{max-width:860px}
+.cols2{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:34px}
+.box{border-radius:10px;padding:26px}
+.box.sim{background:var(--blu)}
+.box.nao{border:1px solid var(--blu2)}
+.box h3{font-size:22px}
+.box ul{list-style:none;margin-top:12px}
+.box li{padding:7px 0 7px 26px;position:relative;font-size:15.5px}
+.box.sim li:before{content:"✓";position:absolute;left:0;color:var(--ros);font-weight:800}
+.box.nao li:before{content:"×";position:absolute;left:2px;color:var(--mut);font-weight:800}
+
+/* OFERTA */
+.oferta{background:var(--blu)}
+.card{max-width:620px;margin:0 auto;background:var(--pap);border-radius:16px;padding:44px 40px;text-align:center;box-shadow:0 30px 60px -35px rgba(46,59,51,.5)}
+.card img{width:150px;margin:0 auto;border-radius:4px;box-shadow:0 14px 30px -16px rgba(46,59,51,.6)}
+.card ul{list-style:none;text-align:left;margin:26px 0 24px}
+.card li{padding:9px 0;border-bottom:1px solid var(--blu2);display:flex;justify-content:space-between;gap:12px;font-size:15.5px}
+.card li span:last-child{font-weight:700;color:var(--sald);white-space:nowrap}
+.preco{font-family:'Bodoni Moda',serif;font-size:64px;line-height:1;color:var(--ink);margin:6px 0 4px}
+.preco small{font-size:24px}
+.garantia{display:flex;gap:16px;align-items:center;text-align:left;margin-top:28px;padding-top:24px;border-top:1px solid var(--blu2)}
+.garantia .g{flex:0 0 64px;height:64px;border-radius:50%;border:2px solid var(--ros);color:var(--ros);display:flex;align-items:center;justify-content:center;font-family:'Bodoni Moda',serif;font-size:26px}
+.garantia p{font-size:14.5px}
+
+/* FAQ */
+.faq .wrap{max-width:780px}
+details{border-bottom:1px solid var(--blu2);padding:18px 0}
+summary{cursor:pointer;font-weight:700;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:20px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";color:var(--ros);font-size:24px;line-height:1}
+details[open] summary:after{content:"−"}
+details p{margin-top:10px;font-size:15.5px}
+footer{padding:40px 0 110px;text-align:center;font-size:13px;color:var(--mut)}
+footer b{font-family:'Bodoni Moda',serif;font-style:italic;font-weight:400;font-size:20px;color:var(--ink);display:block;margin-bottom:6px}
+.sticky{display:none}
+
+@media (max-width:900px){
+  section{padding:60px 0}
+  .hero .wrap,.dentro .wrap{grid-template-columns:1fr;gap:36px}
+  .mock img{margin:0 auto;max-width:300px}
+  .mock .selo{width:96px;height:96px;left:6%}
+  .mock .selo b{font-size:30px}
+  .gal{grid-template-columns:repeat(2,1fr)}
+  .grid4{grid-template-columns:1fr 1fr}
+  .blist{grid-template-columns:1fr 1fr}
+  .cols2{grid-template-columns:1fr}
+  .card{padding:34px 22px}
+  .sticky{display:block;position:fixed;left:0;right:0;bottom:0;background:rgba(255,251,248,.96);backdrop-filter:blur(6px);padding:10px 16px;border-top:1px solid var(--blu2);z-index:9}
+  .sticky .btn{display:block;text-align:center;padding:15px}
+}
+@media (max-width:520px){
+  body{font-size:16px}
+  .grid4,.blist{grid-template-columns:1fr}
+  .bpages{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="kick">Ebook · 30 receitas proteicas</div>
+      <h1>Força <em>no prato</em></h1>
+      <p class="lead">Receitas proteicas para mulheres com rotina real: rápidas, gostosas e sem cara de dieta.</p>
+      <ul>
+        <li>Até 36 g de proteína por porção</li>
+        <li>Do café da manhã ao docinho da tarde</li>
+        <li>Marmitas que rendem a semana inteira</li>
+        <li>Cardápio de 7 dias e lista de compras inclusos</li>
+      </ul>
+      <a class="btn js-buy" href="#oferta">Quero o meu ebook</a>
+      <p class="note">Acesso imediato · PDF para ler no celular ou imprimir</p>
+    </div>
+    <div class="mock">
+      <img src="img/p01.jpg" alt="Capa do ebook Força no Prato" width="420" height="596">
+    </div>
+  </div>
+</header>
+
+<section class="dor">
+  <div class="wrap">
+    <div class="kick">Por que este ebook</div>
+    <h2>Comer mais proteína <em>não precisa ser chato</em></h2>
+    <p>Você sabe que proteína ajuda a segurar a fome e a manter a massa muscular. O difícil é encaixar isso na rotina sem viver de frango sem sal, ovo cozido e shake sem graça.</p>
+    <p>O Força no Prato reúne receitas de mercado comum, que ficam prontas rápido e rendem marmitas, para você bater sua meta de proteína comendo coisas que dão vontade.</p>
+    <p class="big">Comida de verdade, que cabe na sua semana.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="kick" style="text-align:center">Algumas receitas do ebook</div>
+    <div class="gal">
+      <figure><img src="img/r09.jpg" alt="Frango na mostarda e mel com legumes" loading="lazy"><figcaption><b>33 g</b> · Frango na mostarda e mel</figcaption></figure>
+      <figure><img src="img/r07.jpg" alt="Toast de ricota com ovo" loading="lazy"><figcaption><b>21 g</b> · Toast de ricota com ovo</figcaption></figure>
+      <figure><img src="img/r10.jpg" alt="Escondidinho de batata-doce" loading="lazy"><figcaption><b>28 g</b> · Escondidinho de batata-doce</figcaption></figure>
+      <figure><img src="img/r14.jpg" alt="Tilápia na crosta de parmesão" loading="lazy"><figcaption><b>32 g</b> · Tilápia na crosta de parmesão</figcaption></figure>
+      <figure><img src="img/r04.jpg" alt="Crepioca de frango" loading="lazy"><figcaption><b>25 g</b> · Crepioca de frango</figcaption></figure>
+      <figure><img src="img/r12.jpg" alt="Strogonoff fit de frango" loading="lazy"><figcaption><b>34 g</b> · Strogonoff fit</figcaption></figure>
+      <figure><img src="img/r13.jpg" alt="Almôndegas de forno ao sugo" loading="lazy"><figcaption><b>28 g</b> · Almôndegas ao sugo</figcaption></figure>
+      <figure><img src="img/r17.jpg" alt="Sopa cremosa de abóbora com frango" loading="lazy"><figcaption><b>23 g</b> · Sopa de abóbora com frango</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="partes">
+  <div class="wrap">
+    <div class="kick">O que tem dentro</div>
+    <h2>30 receitas em <em>4 momentos do dia</em></h2>
+    <div class="grid4">
+      <div class="parte"><div class="n">01</div><h3>Café da manhã</h3><p>Panqueca com whey, overnight oats, crepioca, pão de queijo proteico e mais.</p><small>8 receitas</small></div>
+      <div class="parte"><div class="n">02</div><h3>Almoço & marmita</h3><p>Pratos para fazer no domingo e comer bem até sexta, com dicas de congelamento.</p><small>8 receitas</small></div>
+      <div class="parte"><div class="n">03</div><h3>Jantar leve</h3><p>Proteína no ponto sem pesar: sopa, fritada, pizza de frigideira, opção vegetariana.</p><small>7 receitas</small></div>
+      <div class="parte"><div class="n">04</div><h3>Lanches & doces</h3><p>Mousse, brigadeiro, cookie e bolo proteicos para a vontade de doce das 16h.</p><small>7 receitas</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="dentro">
+  <div class="wrap">
+    <div class="pages">
+      <img src="img/p15.jpg" alt="Página de receita com foto" loading="lazy">
+      <img src="img/p06.jpg" alt="Página de receita com espaço para anotações" loading="lazy">
+    </div>
+    <div>
+      <div class="kick">Por dentro</div>
+      <h2>Cada receita, <em>sem enrolação</em></h2>
+      <ul class="feat">
+        <li><b>1</b><span>Proteína aproximada por porção em destaque, para você montar seu dia.</span></li>
+        <li><b>2</b><span>Tempo de preparo e rendimento logo no topo.</span></li>
+        <li><b>3</b><span>Ingredientes fáceis de achar e passo a passo curto.</span></li>
+        <li><b>4</b><span>Um truque prático em cada receita: congelar, adiantar, variar.</span></li>
+        <li><b>5</b><span>Espaço para suas anotações, se quiser imprimir.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="bonus">
+  <div class="wrap">
+    <div class="kick">De presente</div>
+    <h2>5 bônus para <em>facilitar sua semana</em></h2>
+    <div class="blist">
+      <div class="b"><div class="n">Bônus 1</div><h3>Quanto de proteína eu preciso?</h3><p>Um cálculo simples para descobrir a sua meta diária.</p></div>
+      <div class="b"><div class="n">Bônus 2</div><h3>Tabela de proteína</h3><p>23 alimentos do dia a dia com a quantidade por porção.</p></div>
+      <div class="b"><div class="n">Bônus 3</div><h3>Cardápio de 7 dias</h3><p>Pronto, usando as receitas do ebook, com marmitas que se repetem.</p></div>
+      <div class="b"><div class="n">Bônus 4</div><h3>Lista de compras</h3><p>Organizada por setor do mercado, para marcar na hora.</p></div>
+      <div class="b"><div class="n">Bônus 5</div><h3>10 lanches em 5 minutos</h3><p>Combinações sem receita para a fome de última hora.</p></div>
+    </div>
+    <div class="bpages">
+      <img src="img/p41.jpg" alt="Tabela de proteína" loading="lazy">
+      <img src="img/p42.jpg" alt="Cardápio de 7 dias" loading="lazy">
+      <img src="img/p43.jpg" alt="Lista de compras" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="quem">
+  <div class="wrap">
+    <div class="kick" style="text-align:center">Para quem é</div>
+    <h2 style="text-align:center">Feito para a <em>sua rotina</em></h2>
+    <div class="cols2">
+      <div class="box sim"><h3>É para você se...</h3><ul>
+        <li>Quer comer mais proteína sem passar horas na cozinha</li>
+        <li>Treina ou quer começar e precisa de comida que acompanhe</li>
+        <li>Gosta de deixar marmitas prontas para a semana</li>
+        <li>Está cansada de comer sempre a mesma coisa</li>
+      </ul></div>
+      <div class="box nao"><h3>Não é para você se...</h3><ul>
+        <li>Procura uma dieta para emagrecer rápido</li>
+        <li>Quer receitas com ingredientes caros e difíceis de achar</li>
+        <li>Precisa de um plano alimentar individual, que só um nutricionista pode fazer</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="oferta" id="oferta">
+  <div class="wrap">
+    <div class="card">
+      <img src="img/p01.jpg" alt="Capa do ebook Força no Prato" loading="lazy">
+      <ul>
+        <li><span>Ebook Força no Prato, 30 receitas</span><span>incluso</span></li>
+        <li><span>Bônus 1 · Quanto de proteína eu preciso?</span><span>incluso</span></li>
+        <li><span>Bônus 2 · Tabela de proteína</span><span>incluso</span></li>
+        <li><span>Bônus 3 · Cardápio de 7 dias</span><span>incluso</span></li>
+        <li><span>Bônus 4 · Lista de compras</span><span>incluso</span></li>
+        <li><span>Bônus 5 · 10 lanches em 5 minutos</span><span>incluso</span></li>
+      </ul>
+      <div class="kick">Tudo isso por</div>
+      <div class="preco"><small>R$</small> 27</div>
+      <p class="note" style="margin:0 0 22px">Pagamento único · acesso imediato</p>
+      <a class="btn js-buy" href="#oferta">Quero o meu ebook</a>
+      <div class="garantia"><div class="g">7</div><p><b>Garantia de 7 dias.</b> Se não gostar, peça o reembolso pela Hotmart dentro de 7 dias após a compra e receba 100% do valor de volta.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <div class="kick">Dúvidas</div>
+    <h2>Perguntas <em>frequentes</em></h2>
+    <div style="margin-top:26px">
+      <details><summary>Como recebo o ebook?</summary><p>Logo após a confirmação do pagamento, você recebe por e-mail o acesso ao PDF pela Hotmart. Pode ler no celular, no computador ou imprimir.</p></details>
+      <details><summary>Preciso de ingredientes difíceis ou caros?</summary><p>Não. As receitas usam ingredientes de mercado comum, como frango, ovos, carne moída, iogurte, aveia e legumes. O whey aparece em algumas receitas, mas não é obrigatório para usar o ebook.</p></details>
+      <details><summary>É uma dieta?</summary><p>Não. É um livro de receitas para incluir mais proteína nas refeições. Ele não substitui o acompanhamento de nutricionista ou médico.</p></details>
+      <details><summary>Tem opção vegetariana?</summary><p>Algumas receitas são vegetarianas, como o tofu grelhado com edamame, a fritada de abobrinha e ricota e os doces proteicos.</p></details>
+      <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. É só pedir o reembolso pela Hotmart e recebe o valor de volta.</p></details>
+    </div>
+  </div>
+</section>
+
+<footer><b>Guias Práticos</b>Conteúdo informativo. As receitas não substituem orientação nutricional individualizada.</footer>
+
+<div class="sticky"><a class="btn js-buy" href="#oferta">Quero o meu ebook · R$ 27</a></div>
+
+<script>
+// Cole aqui o link de checkout da Hotmart (pay.hotmart.com/...)
+var CHECKOUT = "";
+if (CHECKOUT) document.querySelectorAll('.js-buy').forEach(function(a){ a.href = CHECKOUT; });
+</script>
+</body>
+</html>
