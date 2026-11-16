@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O Perfil Invisível · Venda produtos digitais no Instagram sem mostrar o rosto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Dela+Gothic+One&family=Nanum+Pen+Script&family=Young+Serif&display=swap" rel="stylesheet">
+<style>
+:root{--bor:#6B1430;--bor2:#4A0C21;--rosa:#F1C7BC;--rosa2:#F9E5DE;--cafe:#1D1411;--pap:#FBF4EE;--cer:#E3263F;--mut:#7D6560}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Albert Sans',sans-serif;color:var(--cafe);background:var(--pap);font-size:17px;line-height:1.55;padding-bottom:84px}
+img{max-width:100%;display:block}
+.dela{font-family:'Dela Gothic One',sans-serif;font-weight:400;line-height:1}
+.pen{font-family:'Nanum Pen Script',cursive}
+.yg{font-family:'Young Serif',serif}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+section{padding:72px 0}
+.kick{font-weight:800;font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--cer);margin-bottom:14px}
+h2{font-family:'Dela Gothic One',sans-serif;font-weight:400;font-size:clamp(30px,5vw,48px);line-height:1.05;color:var(--bor);margin-bottom:18px}
+.lead{font-size:19px;max-width:640px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--cer);color:#fff;font-weight:800;font-size:18px;text-decoration:none;border-radius:60px;padding:18px 34px;box-shadow:0 6px 0 var(--bor2);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.alt{background:var(--pap);color:var(--bor);box-shadow:0 6px 0 var(--rosa)}
+
+/* hero */
+.hero{background:var(--bor);color:var(--pap);padding:28px 0 0;overflow:hidden;position:relative}
+.hero:before{content:"";position:absolute;right:-180px;top:-180px;width:560px;height:560px;border-radius:50%;border:3px dashed var(--rosa);opacity:.3}
+.top{display:flex;justify-content:space-between;align-items:center;font-weight:800;font-size:12px;letter-spacing:.24em;color:var(--rosa)}
+.top span:last-child{border:1.5px solid var(--rosa);border-radius:40px;padding:6px 14px}
+.hgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:end;margin-top:40px}
+.hero .pen{font-size:clamp(26px,6vw,34px);color:var(--rosa);transform:rotate(-2deg);display:inline-block}
+.hero h1{font-family:'Dela Gothic One',sans-serif;font-weight:400;font-size:clamp(40px,11vw,96px);line-height:.92;margin:8px 0 20px}
+.hero h1 em{font-style:normal;color:var(--rosa)}
+.hero p.sub{font-size:21px;max-width:520px;margin-bottom:28px}
+.hero p.sub b{color:var(--rosa)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 60px}
+.chips span{border:1.5px solid rgba(241,199,188,.6);border-radius:40px;padding:7px 15px;font-size:14px;font-weight:700}
+.hero .cover{transform:rotate(4deg) translateY(30px);border-radius:12px;box-shadow:14px 14px 0 var(--bor2),0 30px 70px rgba(0,0,0,.4);max-width:400px;margin-left:auto}
+
+/* problema */
+.dores{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+.dor{background:#fff;border:1.5px solid var(--rosa);border-radius:22px;padding:24px}
+.dor .yg{font-size:20px;color:var(--bor);line-height:1.25}
+.virada{margin-top:30px;background:var(--cafe);color:var(--pap);border-radius:26px;padding:30px;display:flex;gap:24px;align-items:center}
+.virada .dela{color:var(--rosa);font-size:26px;line-height:1.15}
+
+/* método */
+.met{background:var(--rosa2)}
+.ps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}
+.p{border-radius:26px;padding:26px;min-height:240px;display:flex;flex-direction:column}
+.p .dela{font-size:52px}
+.p h3{font-family:'Dela Gothic One',sans-serif;font-weight:400;font-size:24px;margin:8px 0 10px}
+.p p{font-size:15px}
+
+/* por dentro */
+.inside{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
+.inside figure img{border-radius:10px;box-shadow:8px 8px 0 var(--bor);border:1px solid var(--rosa)}
+.inside figcaption{font-weight:700;font-size:14px;margin-top:14px}
+.list{columns:2;column-gap:40px;margin-top:30px;list-style:none}
+.list li{break-inside:avoid;padding:10px 0 10px 34px;position:relative;border-bottom:1px dashed var(--rosa)}
+.list li:before{content:"";position:absolute;left:0;top:14px;width:20px;height:20px;border-radius:50%;background:var(--cer)}
+.list li:after{content:"";position:absolute;left:6px;top:18px;width:8px;height:5px;border-left:2.5px solid #fff;border-bottom:2.5px solid #fff;transform:rotate(-45deg)}
+
+/* bônus */
+.bon{background:var(--bor);color:var(--pap)}
+.bon h2{color:var(--pap)}
+.bon h2 em{font-style:normal;color:var(--rosa)}
+.bgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:30px}
+.b{background:var(--pap);color:var(--cafe);border-radius:20px;overflow:hidden;display:flex;flex-direction:column}
+.b img{aspect-ratio:3/4;object-fit:cover;object-position:top}
+.b div{padding:16px}
+.b .n{font-family:'Dela Gothic One';color:var(--cer);font-size:14px}
+.b h3{font-family:'Dela Gothic One';font-weight:400;font-size:17px;line-height:1.15;color:var(--bor);margin:4px 0 6px}
+.b p{font-size:13.5px}
+
+/* para quem */
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}
+.fit>div{border-radius:26px;padding:30px}
+.fit h3{font-family:'Dela Gothic One';font-weight:400;font-size:22px;margin-bottom:14px}
+.fit ul{list-style:none}
+.fit li{padding:8px 0 8px 30px;position:relative}
+.yes{background:#fff;border:2px solid var(--bor)}
+.yes li:before{content:"✓";position:absolute;left:0;color:var(--cer);font-weight:900}
+.no{background:var(--rosa2)}
+.no li:before{content:"✕";position:absolute;left:0;color:var(--mut);font-weight:900}
+
+/* oferta */
+.offer{background:var(--cafe);color:var(--pap)}
+.ocard{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:center;background:var(--bor);border-radius:34px;padding:44px;position:relative;overflow:hidden}
+.ocard img{border-radius:10px;box-shadow:12px 12px 0 var(--bor2);transform:rotate(-3deg)}
+.ocard ul{list-style:none;margin:18px 0 24px}
+.ocard li{padding:7px 0 7px 30px;position:relative;font-weight:600}
+.ocard li:before{content:"✓";position:absolute;left:0;color:var(--rosa);font-weight:900}
+.price{font-family:'Dela Gothic One';font-size:76px;line-height:1;color:var(--pap)}
+.price small{font-family:'Albert Sans';font-size:18px;font-weight:600;color:var(--rosa);display:block;margin-bottom:6px}
+.inst{font-size:15px;color:var(--rosa);margin:8px 0 22px}
+.guar{display:flex;gap:20px;align-items:center;margin-top:30px;border:2px dashed var(--rosa);border-radius:24px;padding:24px}
+.seal{flex:none;width:96px;height:96px;border-radius:50%;background:var(--rosa);color:var(--bor);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Dela Gothic One';line-height:1}
+.seal b{font-size:36px;font-weight:400}.seal i{font-style:normal;font-size:11px;font-family:'Albert Sans';font-weight:800;letter-spacing:.1em}
+
+/* faq */
+details{background:#fff;border:1.5px solid var(--rosa);border-radius:18px;padding:18px 22px;margin-bottom:12px}
+summary{font-weight:800;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-family:'Dela Gothic One';color:var(--cer);font-size:22px;line-height:1}
+details[open] summary:after{content:"−"}
+details p{margin-top:10px;color:var(--mut)}
+
+footer{background:var(--cafe);color:var(--rosa2);font-size:13px;padding:40px 0 30px}
+footer b{color:var(--rosa);letter-spacing:.24em}
+
+.sticky{position:fixed;left:0;right:0;bottom:0;background:var(--cafe);color:var(--pap);padding:12px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px;z-index:50;box-shadow:0 -8px 30px rgba(0,0,0,.2)}
+.sticky .dela{font-size:24px;color:var(--rosa)}
+.sticky small{display:block;font-size:12px;opacity:.75}
+.sticky .btn{padding:13px 22px;font-size:16px;box-shadow:none}
+
+@media (max-width:860px){
+ section{padding:56px 0}
+ .hgrid,.ocard,.fit{grid-template-columns:1fr}
+ .hero .cover{margin:0 auto;max-width:300px;transform:rotate(4deg) translateY(30px)}
+ .dores,.ps{grid-template-columns:1fr 1fr}
+ .inside{grid-template-columns:1fr 1fr}
+ .bgrid{grid-template-columns:1fr 1fr}
+ .list{columns:1}
+ .virada{flex-direction:column;align-items:flex-start}
+ .ocard{padding:30px 22px}
+ .ocard img{max-width:240px;margin:0 auto}
+}
+@media (max-width:520px){
+ .dores,.ps{grid-template-columns:1fr}
+ .p{min-height:0}
+ .hero p.sub{font-size:19px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+ <div class="wrap">
+  <div class="top"><span>GUIAS PRÁTICOS</span><span>EBOOK + 5 BÔNUS</span></div>
+  <div class="hgrid">
+   <div>
+    <span class="pen">sem rosto, sem voz, sem nome...</span>
+    <h1>O PERFIL<br><em>INVISÍVEL</em></h1>
+    <p class="sub">O guia para vender <b>produtos digitais no Instagram sem mostrar o rosto</b>, do perfil vazio à primeira venda.</p>
+    <a class="btn" href="#oferta">Quero vender sem aparecer →</a>
+    <div class="chips"><span>Método 4P</span><span>Plano de 30 dias</span><span>50 ganchos</span><span>Acesso imediato</span></div>
+   </div>
+   <div><img class="cover" src="img/capa-hd.jpg" alt="Capa do ebook O Perfil Invisível"></div>
+  </div>
+ </div>
+</header>
+
+<section>
+ <div class="wrap">
+  <div class="kick">Talvez seja você</div>
+  <h2>Você quer vender pela internet, mas travou na hora de aparecer?</h2>
+  <div class="dores">
+   <div class="dor"><div class="yg">“Tenho vergonha de gravar vídeo falando.”</div></div>
+   <div class="dor"><div class="yg">“Não quero que conhecidos e colegas de trabalho me vejam.”</div></div>
+   <div class="dor"><div class="yg">“Acho que sem rosto ninguém vai confiar em mim.”</div></div>
+  </div>
+  <div class="virada">
+   <div class="dela">Boa notícia: o cliente compra a solução, não a pessoa.</div>
+   <p>Perfis de receitas, finanças, organização, estudos e papelaria vendem todos os dias sem mostrar ninguém. Eles seguem um caminho que funciona. Este guia mostra esse caminho, passo a passo.</p>
+  </div>
+ </div>
+</section>
+
+<section class="met">
+ <div class="wrap">
+  <div class="kick">O método</div>
+  <h2>4 passos para um perfil invisível que vende</h2>
+  <p class="lead">Se as vendas não acontecem, quase sempre um destes quatro está faltando. O guia ensina cada um, com exemplos e modelos prontos.</p>
+  <div class="ps">
+   <div class="p" style="background:var(--bor);color:var(--pap)"><div class="dela">P1</div><h3>Perfil</h3><p>Nome, bio, foto, destaques e identidade visual que deixam claro o que você vende, sem mostrar você.</p></div>
+   <div class="p" style="background:var(--rosa);color:var(--bor)"><div class="dela">P2</div><h3>Pauta</h3><p>10 formatos de conteúdo sem rosto, os 4 pilares e roteiros de Reels, carrossel e Stories.</p></div>
+   <div class="p" style="background:var(--cafe);color:var(--pap)"><div class="dela">P3</div><h3>Prova</h3><p>6 tipos de prova que substituem o rosto e geram confiança, mesmo antes da primeira venda.</p></div>
+   <div class="p" style="background:var(--cer);color:#fff"><div class="dela">P4</div><h3>Pedido</h3><p>O funil do comentário ao Pix, roteiro de Direct e respostas para as objeções mais comuns.</p></div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <div class="kick">Por dentro</div>
+  <h2>32 páginas diretas ao ponto</h2>
+  <div class="inside">
+   <figure><img src="img/metodo.jpg" alt="Página do Método 4P" loading="lazy"><figcaption>O Método 4P e o diagnóstico rápido</figcaption></figure>
+   <figure><img src="img/bio.jpg" alt="Página de bio e destaques" loading="lazy"><figcaption>A fórmula da bio que vende</figcaption></figure>
+   <figure><img src="img/reels.jpg" alt="Página de Reels sem rosto" loading="lazy"><figcaption>Reels sem rosto que prendem</figcaption></figure>
+   <figure><img src="img/funil.jpg" alt="Página do funil de vendas" loading="lazy"><figcaption>Do comentário ao Pix</figcaption></figure>
+  </div>
+  <ul class="list">
+   <li>Os 7 estilos de perfil sem rosto e qual escolher</li>
+   <li>O teste dos 3 círculos para achar o nicho certo</li>
+   <li>Que produto digital vender primeiro e por quanto</li>
+   <li>Como ter identidade visual sem mostrar o rosto</li>
+   <li>10 formatos de conteúdo que dá para fazer só com o celular</li>
+   <li>A estrutura do carrossel que faz salvar e comprar</li>
+   <li>A sequência de 5 Stories para vender sem aparecer</li>
+   <li>Como pedir depoimentos sem parecer chata</li>
+   <li>Roteiro de Direct com respostas para objeções</li>
+   <li>Lançamento simples de 7 dias, sem live</li>
+   <li>Os 5 números que importam de verdade</li>
+   <li>Plano de 30 dias, um passo por semana</li>
+  </ul>
+ </div>
+</section>
+
+<section class="bon">
+ <div class="wrap">
+  <div class="kick" style="color:var(--rosa)">De presente</div>
+  <h2>5 bônus <em>prontos para usar</em></h2>
+  <p class="lead">Tudo o que costuma travar quem está começando, já resolvido. É só adaptar para o seu nicho.</p>
+  <div class="bgrid">
+   <div class="b"><img src="img/ganchos.jpg" alt="Bônus 1" loading="lazy"><div><span class="n">BÔNUS 01</span><h3>50 ganchos prontos</h3><p>Para os primeiros 3 segundos dos seus Reels.</p></div></div>
+   <div class="b"><img src="img/calendario.jpg" alt="Bônus 2" loading="lazy"><div><span class="n">BÔNUS 02</span><h3>Calendário de 30 posts</h3><p>Um mês inteiro de ideias, com formato e pilar.</p></div></div>
+   <div class="b"><img src="img/legendas.jpg" alt="Bônus 3" loading="lazy"><div><span class="n">BÔNUS 03</span><h3>12 legendas e Stories</h3><p>Modelos para completar com o seu produto.</p></div></div>
+   <div class="b"><img src="img/bios.jpg" alt="Bônus 4" loading="lazy"><div><span class="n">BÔNUS 04</span><h3>Kit de bio</h3><p>10 bios prontas para nichos diferentes.</p></div></div>
+   <div class="b"><img src="img/checklists.jpg" alt="Bônus 5" loading="lazy"><div><span class="n">BÔNUS 05</span><h3>Checklists imprimíveis</h3><p>Do post perfeito e do lançamento.</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <div class="kick">Sinceridade</div>
+  <h2>Para quem é (e para quem não é)</h2>
+  <div class="fit">
+   <div class="yes"><h3 style="color:var(--bor)">É para você se…</h3><ul>
+    <li>Quer uma renda extra com produtos digitais</li>
+    <li>Não quer ou não pode mostrar o rosto</li>
+    <li>Está começando do zero ou tem um perfil parado</li>
+    <li>Tem cerca de 1 hora por dia para se dedicar</li>
+    <li>Prefere um passo a passo claro a teoria solta</li></ul></div>
+   <div class="no"><h3 style="color:var(--mut)">Não é para você se…</h3><ul>
+    <li>Procura dinheiro rápido sem esforço</li>
+    <li>Quer aprender tráfego pago avançado</li>
+    <li>Não pretende postar com constância</li>
+    <li>Já fatura alto e busca estratégias de escala</li></ul></div>
+  </div>
+ </div>
+</section>
+
+<section class="offer" id="oferta">
+ <div class="wrap">
+  <div class="ocard">
+   <img src="img/capa-hd.jpg" alt="Capa O Perfil Invisível">
+   <div>
+    <div class="kick" style="color:var(--rosa)">Tudo o que você recebe</div>
+    <div class="dela" style="font-size:clamp(28px,4vw,40px);line-height:1.05">O Perfil Invisível<br>+ 5 bônus</div>
+    <ul>
+     <li>Ebook completo com o Método 4P (32 páginas)</li>
+     <li>Plano de 30 dias</li>
+     <li>50 ganchos + calendário de 30 posts</li>
+     <li>12 legendas e Stories + kit de bio</li>
+     <li>Checklists imprimíveis</li>
+     <li>Acesso imediato no seu e-mail, em PDF</li>
+    </ul>
+    <div class="price"><small>pagamento único</small>R$ 27</div>
+    <div class="inst">no Pix ou no cartão</div>
+    <a class="btn alt" href="#oferta">Quero o meu agora →</a>
+   </div>
+  </div>
+  <div class="guar">
+   <div class="seal"><b>7</b><i>DIAS</i></div>
+   <p><b style="color:var(--rosa)">Garantia de 7 dias.</b> Leu e achou que não é para você? Peça o reembolso dentro de 7 dias pela própria plataforma de pagamento e recebe 100% do valor, sem perguntas.</p>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap" style="max-width:780px">
+  <div class="kick">Dúvidas</div>
+  <h2>Perguntas frequentes</h2>
+  <details><summary>Como recebo o material?</summary><p>Logo após a confirmação do pagamento, você recebe no seu e-mail o acesso ao ebook e aos bônus em PDF. No Pix, a liberação costuma ser em poucos minutos.</p></details>
+  <details><summary>Preciso ter muitos seguidores?</summary><p>Não. O guia foi pensado para quem está começando do zero ou tem um perfil parado.</p></details>
+  <details><summary>Preciso já ter um produto pronto?</summary><p>Não. O ebook ajuda a escolher o nicho e o primeiro produto, e o plano de 30 dias inclui criar e cadastrar o produto.</p></details>
+  <details><summary>Vou precisar usar a minha voz?</summary><p>Não é obrigatório. O guia mostra como fazer Reels e Stories só com texto na tela, mãos e música.</p></details>
+  <details><summary>Funciona para qualquer nicho?</summary><p>Funciona melhor em nichos que dá para mostrar sem rosto, como receitas, finanças, organização, estudos, papelaria, pets e templates. O guia explica como avaliar o seu.</p></details>
+  <details><summary>Tem garantia de resultado?</summary><p>Ninguém pode garantir vendas, porque elas dependem da sua dedicação, do nicho e do produto. O que garantimos é o reembolso integral em até 7 dias se o material não for para você.</p></details>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap">
+  <b>GUIAS PRÁTICOS</b>
+  <p style="margin-top:10px;max-width:760px">Material educativo. Os resultados variam de pessoa para pessoa e não há garantia de ganhos. Instagram é marca registrada da Meta; este produto não tem vínculo com a empresa.</p>
+ </div>
+</footer>
+
+<div class="sticky">
+ <div><div class="dela">R$ 27</div><small>Ebook + 5 bônus · acesso imediato</small></div>
+ <a class="btn" href="#oferta">Quero o meu</a>
+</div>
+
+</body>
+</html>
