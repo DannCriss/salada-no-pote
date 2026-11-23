@@ -1,0 +1,48 @@
+{
+ "rewrites": [
+  {
+   "source": "/capas/primeiro-mil.jpg",
+   "destination": "https://raw.githubusercontent.com/DannCriss/salada-no-pote/vitrine-capas/vitrine/primeiro-mil.jpg"
+  },
+  {
+   "source": "/capas/cabeca-leve.jpg",
+   "destination": "https://raw.githubusercontent.com/DannCriss/salada-no-pote/vitrine-capas/vitrine/cabeca-leve.jpg"
+  },
+  {
+   "source": "/capas/fora-do-rotativo.jpg",
+   "destination": "https://raw.githubusercontent.com/DannCriss/salada-no-pote/vitrine-capas/vitrine/fora-do-rotativo.jpg"
+  },
+  {
+   "source": "/capas/o-perfil-invisivel.jpg",
+   "destination": "https://raw.githubusercontent.com/DannCriss/salada-no-pote/main/perfil-invisivel/img/capa-hd.jpg"
+  },
+  {
+   "source": "/capas/renda-de-pantufa.jpg",
+   "destination": "https://raw.githubusercontent.com/DannCriss/salada-no-pote/main/renda-de-pantufa/img/capa.jpg"
+  },
+  {
+   "source": "/capas/casa-leve-30-dias.jpg",
+   "destination": "https://raw.githubusercontent.com/DannCriss/salada-no-pote/main/casa-leve/img/capa.jpg"
+  },
+  {
+   "source": "/capas/do-oi-ao-pix.jpg",
+   "destination": "https://raw.githubusercontent.com/DannCriss/salada-no-pote/main/do-oi-ao-pix/img/capa.jpg"
+  },
+  {
+   "source": "/capas/forca-no-prato.jpg",
+   "destination": "https://raw.githubusercontent.com/DannCriss/salada-no-pote/main/forca-no-prato/img/p01.jpg"
+  },
+  {
+   "source": "/capas/salada-no-pote.jpg",
+   "destination": "https://raw.githubusercontent.com/DannCriss/salada-no-pote/e29481b/img/pg1-01.jpg"
+  },
+  {
+   "source": "/capas/combinado-e-combinado.webp",
+   "destination": "https://combinado-e-combinado.vercel.app/cover.webp"
+  },
+  {
+   "source": "/capas/lambeu-o-pote.png",
+   "destination": "https://hotmart.s3.amazonaws.com/product_pictures/781b545e-c4a7-4d66-a597-c335ca62abfd/produto600.png"
+  }
+ ]
+}

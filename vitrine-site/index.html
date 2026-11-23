@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guias Práticos | Ebooks para resolver a vida real</title>
+<meta name="description" content="Ebooks curtos e diretos ao ponto sobre cozinha, casa e família, dinheiro, renda extra e vendas. Com bônus para imprimir e garantia de 7 dias.">
+<meta property="og:title" content="Guias Práticos | Ebooks para resolver a vida real">
+<meta property="og:description" content="Cozinha, casa, dinheiro e vendas: guias curtos, com bônus para imprimir e garantia de 7 dias.">
+<meta property="og:image" content="https://guiaspraticos.vercel.app/capas/renda-de-pantufa.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Caveat+Brush&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#FFF6E6;--cream2:#FBE9CC;--choc:#2B1A12;--choc2:#43291C;--tang:#FF6B35;--tang2:#E85420;--butter:#FFD54A;--mint:#BFE3C8;--rose:#F7B5A8;--mut:#7A6457}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Bricolage Grotesque',system-ui,sans-serif;background:var(--cream);color:var(--choc);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding-left:22px;padding-right:22px}
+.hand{font-family:'Caveat Brush',cursive;font-weight:400}
+.ticker{background:var(--choc);color:var(--cream);overflow:hidden;white-space:nowrap;font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;padding:11px 0}
+.ticker .row{display:inline-flex;animation:run 38s linear infinite}
+.ticker span{display:inline-flex;align-items:center;gap:22px;padding-right:22px}
+.ticker i{width:8px;height:8px;border-radius:50%;background:var(--butter);display:inline-block}
+@keyframes run{to{transform:translateX(-50%)}}
+.nav{display:flex;justify-content:space-between;align-items:center;padding-top:18px;padding-bottom:18px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;letter-spacing:-.02em}
+.logo b{width:36px;height:36px;border-radius:12px 12px 12px 4px;background:var(--tang);color:var(--cream);display:grid;place-items:center;font-size:16px;transform:rotate(-6deg);transition:transform .4s cubic-bezier(.34,1.56,.64,1)}
+.logo:hover b{transform:rotate(6deg) scale(1.08)}
+.pill{display:inline-flex;align-items:center;gap:10px;background:var(--choc);color:var(--cream);font-weight:700;font-size:15px;padding:12px 20px;border-radius:999px;transition:transform .3s cubic-bezier(.34,1.56,.64,1),background .2s}
+.pill:hover{transform:translateY(-2px) scale(1.03);background:var(--tang)}
+.hero{position:relative;padding:30px 0 120px}
+.hgrid{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center}
+.kick{display:inline-flex;align-items:center;gap:8px;background:var(--mint);font-weight:700;font-size:14px;padding:7px 14px;border-radius:999px}
+.kick i{width:8px;height:8px;border-radius:50%;background:#2F8A4E;animation:blink 1.6s ease-in-out infinite}
+@keyframes blink{50%{opacity:.25}}
+h1{font-size:clamp(46px,7.2vw,92px);line-height:.95;letter-spacing:-.045em;font-weight:800;margin:22px 0 22px}
+h1 .w{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.08em}
+h1 .w>span{display:inline-block;transform:translateY(110%);animation:up .9s cubic-bezier(.2,.9,.25,1) forwards}
+h1 .t{color:var(--tang);position:relative}
+h1 .t svg{position:absolute;left:-2%;bottom:-.02em;width:104%;height:.3em;overflow:visible;z-index:-1}
+h1 .t path{stroke-dasharray:420;stroke-dashoffset:420;animation:draw 1s 1.1s ease forwards}
+@keyframes up{to{transform:translateY(0)}}
+@keyframes draw{to{stroke-dashoffset:0}}
+.lead{font-size:clamp(18px,2vw,21px);max-width:520px;color:var(--choc2);opacity:0;animation:fade .8s .9s forwards}
+@keyframes fade{to{opacity:1}}
+.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:18px;margin-top:30px;opacity:0;animation:fade .8s 1.1s forwards}
+.btn{position:relative;display:inline-flex;align-items:center;gap:12px;background:var(--tang);color:#fff;font-weight:800;font-size:18px;padding:12px 12px 12px 28px;border-radius:999px;box-shadow:0 0 0 0 rgba(255,107,53,.5),0 14px 30px -10px rgba(232,84,32,.7);animation:glow 2.6s ease-in-out infinite;transition:transform .3s cubic-bezier(.34,1.56,.64,1)}
+.btn:hover{transform:translateY(-3px) scale(1.03)}
+.btn .ar{width:40px;height:40px;border-radius:50%;background:var(--cream);color:var(--tang);display:grid;place-items:center;transition:transform .35s cubic-bezier(.34,1.56,.64,1)}
+.btn:hover .ar{transform:rotate(-45deg)}
+@keyframes glow{50%{box-shadow:0 0 0 12px rgba(255,107,53,0),0 14px 30px -10px rgba(232,84,32,.7)}}
+.note{font-size:14px;color:var(--mut)}
+.note b{color:var(--choc)}
+.stack{position:relative;height:520px}
+.blob{position:absolute;inset:6% 4% 4% 8%;background:var(--butter);border-radius:58% 42% 55% 45%/48% 58% 42% 52%;animation:morph 12s ease-in-out infinite}
+.blob.b2{inset:18% 0 0 26%;background:var(--rose);opacity:.7;animation-duration:15s;animation-direction:reverse}
+@keyframes morph{25%{border-radius:42% 58% 38% 62%/58% 42% 58% 42%}50%{border-radius:50% 50% 62% 38%/38% 62% 48% 52%}75%{border-radius:62% 38% 46% 54%/52% 46% 54% 48%}}
+.fan{position:absolute;inset:0;transition:transform .2s ease-out}
+.fan a{position:absolute;width:40%;border-radius:6px;overflow:hidden;box-shadow:0 24px 40px -14px rgba(43,26,18,.55);animation:float 6s ease-in-out infinite;transition:scale .35s cubic-bezier(.34,1.56,.64,1)}
+.fan a:hover{scale:1.06;z-index:9}
+.fan a:nth-child(1){left:4%;top:10%;rotate:-14deg;animation-delay:-1s}
+.fan a:nth-child(2){left:30%;top:2%;rotate:-2deg;z-index:3;animation-delay:-3s}
+.fan a:nth-child(3){left:56%;top:10%;rotate:12deg;z-index:2;animation-delay:-2s}
+.fan a:nth-child(4){left:14%;top:44%;rotate:6deg;z-index:4;width:34%;animation-delay:-4s}
+.fan a:nth-child(5){left:46%;top:46%;rotate:-8deg;z-index:5;width:34%;animation-delay:-5s}
+@keyframes float{50%{transform:translateY(-14px)}}
+.sticker{position:absolute;right:2%;bottom:2%;z-index:8;width:124px;height:124px;border-radius:50%;background:var(--choc);color:var(--cream);display:grid;place-items:center;text-align:center;font-weight:800;line-height:1;box-shadow:0 0 0 6px var(--cream)}
+.sticker b{font-size:34px;color:var(--butter);display:block}
+.sticker small{font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.sticker>div{animation:wob 4s ease-in-out infinite}
+@keyframes wob{50%{transform:rotate(-8deg) scale(1.06)}}
+.wave{display:block;width:100%;height:80px}
+.dark{background:var(--choc);color:var(--cream);position:relative}
+.dark .wave,.how .wave,.end .wave{position:absolute;left:0;right:0;top:-79px}
+.dark .wave{fill:var(--choc)}
+.wave.bot{top:auto!important;bottom:-79px;transform:scaleY(-1)}
+.wave path{animation:swell 8s ease-in-out infinite alternate}
+@keyframes swell{to{transform:translateX(-90px)}}
+.wave{overflow:visible}
+.shelf{padding:70px 0 90px;text-align:center}
+.shelf h2,.sec h2,.how h2,.faq h2{font-size:clamp(34px,5vw,58px);line-height:1;letter-spacing:-.035em;font-weight:800}
+.shelf p.sub{opacity:.75;margin:14px auto 0;max-width:560px}
+.marq{overflow:hidden;margin-top:40px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marq+.marq{margin-top:18px}
+.marq .row{display:flex;gap:24px;width:max-content;animation:run 46s linear infinite;padding:16px 0}
+.marq.rev .row{animation-direction:reverse;animation-duration:54s}
+.marq:hover .row{animation-play-state:paused}
+.marq a{width:170px;flex:none;border-radius:6px;overflow:hidden;box-shadow:0 16px 30px -12px rgba(0,0,0,.6);transition:transform .35s cubic-bezier(.34,1.56,.64,1);background:#3a251a}
+.marq a:nth-child(odd){transform:rotate(-3deg)}
+.marq a:nth-child(even){transform:rotate(3deg) translateY(10px)}
+.marq a:hover{transform:rotate(0) scale(1.08)}
+.marq img{width:100%;aspect-ratio:3/4.2;object-fit:cover}
+.sec{padding:150px 0 90px}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
+.head .hand{font-size:30px;color:var(--tang);display:block;margin-bottom:6px;transform:rotate(-2deg)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap}
+.tabs button{font-family:inherit;font-weight:700;font-size:15px;color:var(--choc);background:#fff;border:2px solid var(--choc);border-radius:999px;padding:9px 16px;cursor:pointer;transition:background .25s,color .25s,transform .3s cubic-bezier(.34,1.56,.64,1)}
+.tabs button:hover{transform:translateY(-2px)}
+.tabs button[aria-pressed="true"]{background:var(--choc);color:var(--butter)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:40px}
+.card{position:relative;display:flex;flex-direction:column;transition:transform .5s cubic-bezier(.2,.9,.25,1),opacity .6s ease,translate .6s cubic-bezier(.2,.9,.25,1);opacity:0;translate:0 40px}
+.card.in{opacity:1;translate:0 0}
+.card[hidden]{display:none}
+.card .top{position:relative;background:var(--c);padding:46px 0 26px;display:flex;justify-content:center;border-radius:4px 4px 0 0}
+.card .top::before{content:"";position:absolute;left:0;right:0;top:-1px;height:24px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22' preserveAspectRatio='none'%3E%3Cpath fill='%23FFF6E6' d='M0 0 L0 11 C8 0 17 0 25 11 C33 22 42 22 50 11 C58 0 67 0 75 11 C83 22 92 22 100 11 L100 0 Z'/%3E%3C/svg%3E") top/100% 100% no-repeat;transition:transform .6s ease}
+.card:hover .top::before{transform:scaleX(-1)}
+.card img{height:250px;width:auto;max-width:80%;object-fit:contain;border-radius:4px;box-shadow:0 18px 30px -12px rgba(43,26,18,.55);transition:transform .5s cubic-bezier(.34,1.56,.64,1)}
+.card:hover img{transform:translateY(-8px) rotate(-3deg) scale(1.04)}
+.card .tag{position:absolute;top:36px;left:18px;background:var(--cream);font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:6px 11px;border-radius:999px;z-index:2}
+.card .body{background:#fff;border-radius:0 0 26px 26px;padding:22px;flex:1;display:flex;flex-direction:column}
+.card h3{font-size:25px;line-height:1.05;letter-spacing:-.03em;font-weight:800}
+.card p{font-size:15.5px;color:var(--choc2);margin-top:8px}
+.card .foot{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:18px}
+.price{font-weight:800;font-size:30px;letter-spacing:-.03em;line-height:1}
+.price small{display:block;font-size:13px;font-weight:600;color:var(--mut);letter-spacing:0;margin-top:3px}
+.go{width:50px;height:50px;border-radius:50%;background:var(--choc);color:var(--cream);display:grid;place-items:center;font-size:20px;transition:transform .4s cubic-bezier(.34,1.56,.64,1),background .2s}
+.card:hover .go{transform:rotate(-45deg) scale(1.08);background:var(--tang)}
+.how{background:var(--butter);position:relative;padding:100px 0 110px}
+.how .wave{fill:var(--butter)}
+.how h2{text-align:center}
+.trail{position:relative;margin-top:60px}
+.trail svg{position:absolute;left:0;top:20px;width:100%;height:100px;overflow:visible}
+.trail svg path{fill:none;stroke:var(--choc);stroke-width:3;stroke-dasharray:8 10}
+.trail svg path.mask{stroke:var(--butter);stroke-width:7}
+.steps{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.step{text-align:center;padding:0 6px}
+.step .n{width:92px;height:92px;margin:0 auto;border-radius:46% 54% 50% 50%/55% 45% 55% 45%;background:var(--choc);color:var(--butter);display:grid;place-items:center;font-weight:800;font-size:38px;box-shadow:6px 6px 0 var(--tang);transition:transform .5s cubic-bezier(.34,1.56,.64,1)}
+.step:hover .n{transform:rotate(-10deg) scale(1.08)}
+.step h3{font-size:22px;margin-top:20px;letter-spacing:-.02em}
+.step p{font-size:15.5px;margin-top:6px;color:var(--choc2)}
+.nums{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding-top:150px;padding-bottom:40px;text-align:center}
+.nums b{display:block;font-size:clamp(60px,9vw,110px);font-weight:800;letter-spacing:-.05em;line-height:1;color:var(--tang)}
+.nums span{font-weight:700;font-size:17px}
+.faq{padding:70px 0 140px}
+.faq .wrap{max-width:820px}
+.faq h2{text-align:center;margin-bottom:30px}
+details{background:#fff;border-radius:22px;margin-bottom:12px;overflow:hidden;transition:background .3s}
+details[open]{background:var(--cream2)}
+summary{list-style:none;cursor:pointer;font-weight:800;font-size:18px;padding:20px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary i{flex:none;width:34px;height:34px;border-radius:50%;background:var(--choc);color:var(--cream);display:grid;place-items:center;font-style:normal;font-size:22px;transition:transform .4s cubic-bezier(.34,1.56,.64,1)}
+details[open] summary i{transform:rotate(45deg);background:var(--tang)}
+details p{padding:0 24px 22px;color:var(--choc2)}
+.end{background:var(--choc);color:var(--cream);text-align:center;position:relative;padding:80px 0 40px}
+.end .wave{fill:var(--choc)}
+.end h2{font-size:clamp(40px,6.5vw,84px);line-height:.95;letter-spacing:-.045em;font-weight:800}
+.end h2 .hand{color:var(--butter);font-size:.75em;display:block;transform:rotate(-2deg);letter-spacing:0}
+.end .btn{margin-top:34px}
+.end footer{margin-top:80px;padding-top:26px;border-top:1px solid rgba(255,246,230,.15);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:14px;opacity:.75}
+@media (max-width:980px){
+ .hgrid{grid-template-columns:1fr}
+ .stack{height:440px;max-width:520px;margin:10px auto 0;width:100%}
+ .grid{grid-template-columns:repeat(2,1fr)}
+ .steps{grid-template-columns:1fr 1fr;row-gap:44px}
+ .trail svg{display:none}
+}
+@media (max-width:620px){
+ body{font-size:16px}
+ .nav .pill{display:none}
+ .hero{padding:10px 0 100px}
+ .stack{height:340px}
+ .sticker{width:96px;height:96px}
+ .sticker b{font-size:26px}
+ .grid{grid-template-columns:1fr}
+ .card img{height:230px}
+ .nums{grid-template-columns:1fr;gap:34px;padding-top:130px}
+ .marq a{width:128px}
+ .wave{height:50px}
+ .dark .wave,.how .wave,.end .wave{top:-49px}
+ .wave.bot{bottom:-49px}
+ .end .btn,.cta-row .btn{width:100%;justify-content:space-between}
+}
+@media (prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important}
+ h1 .w>span{transform:none}.lead,.cta-row{opacity:1}.card{opacity:1;translate:0 0}
+ h1 .t path{stroke-dashoffset:0}
+}
+</style>
+</head>
+<body>
+
+<div class="ticker" aria-hidden="true"><div class="row" id="tick"></div></div>
+
+<header class="wrap nav">
+ <a class="logo" href="#"><b>GP</b>Guias Práticos</a>
+ <a class="pill" href="#guias">Ver os 11 guias ↓</a>
+</header>
+
+<section class="hero">
+ <div class="wrap hgrid">
+  <div>
+   <span class="kick"><i></i>Acesso imediato · garantia de 7 dias</span>
+   <h1><span class="w"><span>Guias</span></span> <span class="w"><span style="animation-delay:.08s">curtos</span></span> <span class="w"><span style="animation-delay:.16s">pra</span></span> <span class="w"><span style="animation-delay:.24s">resolver</span></span> <span class="w"><span style="animation-delay:.32s">a</span></span> <span class="w"><span class="t" style="animation-delay:.4s">vida real<svg viewBox="0 0 400 30" preserveAspectRatio="none" aria-hidden="true"><path d="M4 22 C 90 4, 200 4, 396 18" fill="none" stroke="#FFD54A" stroke-width="12" stroke-linecap="round"/></svg></span></span></h1>
+   <p class="lead">Ebooks diretos ao ponto sobre cozinha, casa, dinheiro e vendas. Passo a passo, exemplos de verdade e bônus prontos para imprimir.</p>
+   <div class="cta-row">
+    <a class="btn" href="#guias">Escolher meu guia <span class="ar">→</span></a>
+    <span class="note">A partir de <b>R$ 27</b><br>pagamento único</span>
+   </div>
+  </div>
+  <div class="stack" id="stack">
+   <div class="blob"></div><div class="blob b2"></div>
+   <div class="fan" id="fan"></div>
+   <div class="sticker"><div><b>+50</b><small>bônus nos<br>guias</small></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="dark">
+ <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M-180,40 C0,80 180,0 360,40 C540,80 720,0 900,40 C1080,80 1260,0 1440,40 C1620,80 1800,0 1980,40 L1980,80 L-180,80 Z"/></svg>
+ <div class="shelf">
+  <div class="wrap"><h2>A estante inteira, girando</h2><p class="sub">Passe o mouse para parar. Clique em qualquer capa para ver o guia completo.</p></div>
+  <div class="marq"><div class="row" id="m1"></div></div>
+  <div class="marq rev"><div class="row" id="m2"></div></div>
+ </div>
+ <svg class="wave bot" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M-180,40 C0,80 180,0 360,40 C540,80 720,0 900,40 C1080,80 1260,0 1440,40 C1620,80 1800,0 1980,40 L1980,80 L-180,80 Z"/></svg>
+</section>
+
+<section class="sec" id="guias">
+ <div class="wrap">
+  <div class="head">
+   <div><span class="hand">escolha pelo assunto</span><h2>Todos os guias</h2></div>
+   <div class="tabs" role="group" aria-label="Filtrar guias por tema">
+    <button type="button" data-f="todos" aria-pressed="true">Todos</button>
+    <button type="button" data-f="cozinha" aria-pressed="false">Cozinha</button>
+    <button type="button" data-f="casa" aria-pressed="false">Casa e família</button>
+    <button type="button" data-f="dinheiro" aria-pressed="false">Dinheiro</button>
+    <button type="button" data-f="vendas" aria-pressed="false">Vendas e trabalho</button>
+   </div>
+  </div>
+  <div class="grid" id="grid"></div>
+ </div>
+</section>
+
+<section class="how">
+ <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M-180,40 C0,80 180,0 360,40 C540,80 720,0 900,40 C1080,80 1260,0 1440,40 C1620,80 1800,0 1980,40 L1980,80 L-180,80 Z"/></svg>
+ <div class="wrap">
+  <h2>Do clique ao PDF em minutos</h2>
+  <div class="trail">
+   <svg viewBox="0 0 1000 100" preserveAspectRatio="none" aria-hidden="true"><path d="M125 26 C 220 110, 300 -50, 375 26 S 540 110, 625 26 S 790 -50, 875 26"/><path class="mask" id="trailMask" d="M125 26 C 220 110, 300 -50, 375 26 S 540 110, 625 26 S 790 -50, 875 26"/></svg>
+   <div class="steps">
+    <div class="step"><div class="n">1</div><h3>Escolha o guia</h3><p>Veja tudo o que tem dentro antes de decidir.</p></div>
+    <div class="step"><div class="n">2</div><h3>Pague seguro</h3><p>Pix, boleto ou cartão, pela Hotmart ou pela Kiwify.</p></div>
+    <div class="step"><div class="n">3</div><h3>Receba na hora</h3><p>O PDF e os bônus chegam no seu e-mail.</p></div>
+    <div class="step"><div class="n">7</div><h3>Dias de garantia</h3><p>Não gostou? Peça o reembolso pela plataforma.</p></div>
+   </div>
+  </div>
+ </div>
+ <svg class="wave bot" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M-180,40 C0,80 180,0 360,40 C540,80 720,0 900,40 C1080,80 1260,0 1440,40 C1620,80 1800,0 1980,40 L1980,80 L-180,80 Z"/></svg>
+</section>
+
+<div class="wrap nums">
+ <div><b data-n="11">11</b><span>guias práticos</span></div>
+ <div><b data-n="52">52</b><span>bônus para usar e imprimir</span></div>
+ <div><b data-n="7">7</b><span>dias de garantia em todos</span></div>
+</div>
+
+<section class="faq">
+ <div class="wrap">
+  <h2>Ficou alguma dúvida?</h2>
+  <details><summary>Os guias são impressos?<i>+</i></summary><p>Não. Todos são ebooks em PDF, para ler no celular, no tablet ou no computador. Os checklists, planners e cartões dos bônus podem ser impressos em casa.</p></details>
+  <details><summary>Como recebo o material?<i>+</i></summary><p>Logo depois da confirmação do pagamento, você recebe o acesso por e-mail pela plataforma onde comprou. No Pix, a liberação costuma ser em poucos minutos.</p></details>
+  <details><summary>Posso comprar mais de um guia?<i>+</i></summary><p>Pode. Cada guia tem a sua página e o seu pagamento, e todos têm a mesma garantia de 7 dias.</p></details>
+  <details><summary>E se eu não gostar?<i>+</i></summary><p>Você tem 7 dias de garantia em qualquer guia. É só pedir o reembolso pela própria Hotmart ou Kiwify e receber o valor integral.</p></details>
+  <details><summary>Os guias substituem um profissional?<i>+</i></summary><p>Não. São materiais educativos e práticos. Em temas de saúde, finanças ou comportamento, eles não substituem a orientação individual de um profissional.</p></details>
+ </div>
+</section>
+
+<section class="end">
+ <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M-180,40 C0,80 180,0 360,40 C540,80 720,0 900,40 C1080,80 1260,0 1440,40 C1620,80 1800,0 1980,40 L1980,80 L-180,80 Z"/></svg>
+ <div class="wrap">
+  <h2><span class="hand">bora?</span>Seu próximo passo<br>cabe num PDF.</h2>
+  <a class="btn" href="#guias">Escolher meu guia <span class="ar">→</span></a>
+  <footer><span><b>Guias Práticos</b> · Ebooks para resolver a vida real</span><span>Pagamentos pela Hotmart e pela Kiwify · © 2026</span></footer>
+ </div>
+</section>
+
+<script>
+var G=[
+ {s:'primeiro-mil.jpg',u:'https://primeiro-mil.vercel.app/',t:'Primeiro Mil em 90 Dias',c:'dinheiro',k:'Dinheiro',col:'#F7B5A8',d:'Um plano de 13 semanas, uma meta por semana, para fazer seus primeiros R$ 1.000 extras com o que você já sabe fazer.',p:'R$ 27',b:'5 bônus + planilha'},
+ {s:'cabeca-leve.jpg',u:'https://guias-praticos-cabeca-leve.vercel.app/',t:'Cabeça Leve',c:'vendas',k:'Trabalho',col:'#C9D3FF',d:'ChatGPT e Claude para organizar a rotina, a casa e o trabalho em 15 minutos por semana, sem pagar assinatura.',p:'R$ 27',b:'6 bônus'},
+ {s:'o-perfil-invisivel.jpg',u:'https://o-perfil-invisivel.vercel.app/',t:'O Perfil Invisível',c:'vendas',k:'Vendas',col:'#F3CFC6',d:'Do perfil vazio à primeira venda de produtos digitais no Instagram, sem mostrar o rosto. Com plano de 30 dias.',p:'R$ 27',b:'5 bônus'},
+ {s:'renda-de-pantufa.jpg',u:'https://renda-de-pantufa.vercel.app/',t:'Renda de Pantufa',c:'dinheiro',k:'Renda extra',col:'#BFE3C8',d:'50 ideias de renda extra para fazer de casa, com quanto investir, onde achar clientes e como cobrar.',p:'R$ 27',b:'5 bônus'},
+ {s:'combinado-e-combinado.webp',u:'https://combinado-e-combinado.vercel.app/',t:'Combinado é Combinado!',c:'casa',k:'Família',col:'#FFE38A',d:'Rotina com crianças de 2 a 12 anos, quadro de tarefas, limites de tela e combinados que a família cria junta.',p:'R$ 27',b:'9 bônus'},
+ {s:'casa-leve-30-dias.jpg',u:'https://casa-leve-30-dias.vercel.app/',t:'Casa Leve em 30 Dias',c:'casa',k:'Casa',col:'#FBD9A8',d:'Organize a casa inteira em tarefas de 10 a 20 minutos, sem maratona de faxina e sem gastar com organizadores.',p:'R$ 27',b:'5 bônus'},
+ {s:'do-oi-ao-pix.jpg',u:'https://do-oi-ao-pix.vercel.app/',t:'Do “Oi” ao Pix',c:'vendas',k:'Vendas',col:'#FFC7A8',d:'Transforme conversas em vendas pelo WhatsApp Business com o Método OI·PIX e 40 mensagens prontas.',p:'R$ 27',b:'5 bônus'},
+ {s:'forca-no-prato.jpg',u:'https://forca-no-prato.vercel.app/',t:'Força no Prato',c:'cozinha',k:'Cozinha',col:'#F7C9D0',d:'30 receitas proteicas para mulheres com rotina real, do café da manhã ao docinho da tarde.',p:'R$ 27',b:'5 bônus'},
+ {s:'lambeu-o-pote.png',u:'https://lambeu-o-pote.vercel.app/',t:'Lambeu o Pote!',c:'cozinha',k:'Pets',col:'#FFE0A3',d:'30 receitas naturais de petiscos para cães, sem sal, sem açúcar e sem conservantes. Tem bônus para gatos.',p:'R$ 27',b:'4 bônus'},
+ {s:'salada-no-pote.jpg',u:'https://saladasnopote.vercel.app/',t:'30 Receitas de Salada no Pote',c:'cozinha',k:'Cozinha',col:'#D6E8C4',d:'Com 1 hora no domingo, almoços saudáveis que ficam fresquinhos até 5 dias.',p:'R$ 39,90',b:'2 bônus'},
+ {s:'fora-do-rotativo.jpg',u:'https://fora-do-rotativo.vercel.app/',t:'Fora do Rotativo',c:'dinheiro',k:'Dinheiro',col:'#BFE3D3',d:'Um plano semana a semana para a dívida do cartão parar de crescer e acabar em 90 dias.',p:'R$ 27',b:'planilha de bônus'}
+];
+function img(x,lazy){return '<img src="/capas/'+x.s+'" alt="Capa do ebook '+x.t+'"'+(lazy?' loading="lazy"':'')+' decoding="async">'}
+var tk=['Cozinha','Casa e família','Dinheiro','Renda extra','Vendas','Pets','Rotina','Acesso imediato','Garantia de 7 dias','Bônus para imprimir'],h='';
+for(var r=0;r<4;r++)tk.forEach(function(t){h+='<span>'+t+'<i></i></span>'});
+document.getElementById('tick').innerHTML=h;
+document.getElementById('fan').innerHTML=[3,0,9,6,4].map(function(i){return '<a href="'+G[i].u+'">'+img(G[i])+'</a>'}).join('');
+function strip(a){var s='';for(var r=0;r<2;r++)a.forEach(function(i){s+='<a href="'+G[i].u+'"'+(r?' tabindex="-1" aria-hidden="true"':'')+'>'+img(G[i])+'</a>'});return s}
+document.getElementById('m1').innerHTML=strip([0,1,2,3,4,5]);
+document.getElementById('m2').innerHTML=strip([6,7,8,9,10,2]);
+document.getElementById('grid').innerHTML=G.map(function(x){return '<a class="card" data-c="'+x.c+'" href="'+x.u+'"><div class="top" style="--c:'+x.col+'"><span class="tag">'+x.k+'</span>'+img(x,true)+'</div><div class="body"><h3>'+x.t+'</h3><p>'+x.d+'</p><div class="foot"><div class="price">'+x.p+'<small>'+x.b+'</small></div><span class="go" aria-hidden="true">→</span></div></div></a>'}).join('');
+var cards=[].slice.call(document.querySelectorAll('.card'));
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+cards.forEach(function(c,i){c.style.transitionDelay=(i%3)*90+'ms';io.observe(c)});
+if(matchMedia('(hover:hover)').matches)cards.forEach(function(c){
+ c.addEventListener('mousemove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transitionDelay='0ms';c.style.transform='perspective(900px) rotateY('+x*8+'deg) rotateX('+(-y*8)+'deg)'});
+ c.addEventListener('mouseleave',function(){c.style.transform=''})});
+var bs=document.querySelectorAll('.tabs button');
+bs.forEach(function(b){b.addEventListener('click',function(){var f=b.dataset.f;bs.forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+ var n=0;cards.forEach(function(c){var on=f==='todos'||c.dataset.c===f;c.hidden=!on;if(on){c.classList.remove('in');c.style.transitionDelay=(n++)*70+'ms';requestAnimationFrame(function(){requestAnimationFrame(function(){c.classList.add('in')})})}})})});
+var st=document.getElementById('stack'),fan=document.getElementById('fan');
+if(matchMedia('(hover:hover)').matches)st.addEventListener('mousemove',function(e){var r=st.getBoundingClientRect();fan.style.transform='translate('+((e.clientX-r.left)/r.width-.5)*18+'px,'+((e.clientY-r.top)/r.height-.5)*18+'px)'});
+var tm=document.getElementById('trailMask'),L=tm.getTotalLength();tm.style.strokeDasharray=L+' '+L;
+function trail(){var r=tm.closest('.trail').getBoundingClientRect(),v=innerHeight,p=Math.min(1,Math.max(0,(v-r.top)/(v*.7)));tm.style.strokeDashoffset=-L*p}
+addEventListener('scroll',trail,{passive:true});trail();
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches){
+ var no=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var el=e.target,n=+el.dataset.n,t0=null;no.unobserve(el);
+  function f(t){t0=t0||t;var k=Math.min(1,(t-t0)/1200);el.textContent=Math.round(n*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(f)}requestAnimationFrame(f)})},{threshold:.6});
+ document.querySelectorAll('[data-n]').forEach(function(el){el.textContent='0';no.observe(el)});
+}
+</script>
+</body>
+</html>
